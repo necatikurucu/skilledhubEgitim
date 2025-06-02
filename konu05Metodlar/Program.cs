@@ -25,6 +25,7 @@
                 Console.WriteLine("mail kabul edildi");
             */
             // KdvHesapla();
+
             MatematikselMetotlar();
         }
         static void Toplamayap()
@@ -51,7 +52,7 @@
 
         static bool mailgonder(string mailAdresi)
         {
-            if (!string.IsNullOrWhiteSpace(mailAdresi)) //Eğer mail adresi değişkenine bir değer girilmişse yani mail adresi boş değilse
+            if (!string.IsNullOrWhiteSpace(mailAdresi)) ; //Eğer mail adresi değişkenine bir değer girilmişse yani mail adresi boş değilse
             {
                 return true; // geriye true değer döndür
             }
