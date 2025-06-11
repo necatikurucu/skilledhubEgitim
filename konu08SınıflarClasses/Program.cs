@@ -35,7 +35,7 @@ namespace konu08SınıflarClasses
             Console.WriteLine("sınıflar - classes");
             #region Örnek1
 
-            
+
             Ev ilkEv = new Ev(); // soyut bir yapı olan ev sınıfından somut bir nesne olan ilkev i oluşturduk
             ilkEv.sokakAdi = "çiçek sk.";
             ilkEv.kapiNo = 10;
@@ -51,18 +51,18 @@ namespace konu08SınıflarClasses
             Console.WriteLine("yazlikEv kapi no : " + yazlikEv.kapiNo);
 
             Console.WriteLine();
-            
+
             Ev koyEvi = new()
             {
                 sokakAdi = "Pınar sk.", // bu şekilde de tanımlama yapabiliriz ; yerine , kullanmak gerekir
-                kapiNo = 34 
+                kapiNo = 34
             };
             Console.WriteLine("koyEvi sokak adi :" + koyEvi.sokakAdi);
             Console.WriteLine("koyEvi kapi no : " + koyEvi.kapiNo);
             #endregion
             Console.WriteLine();
             #region Örnek2
-                        
+
             Kullanici kullanici = new()
             {
                 Adi = "Ahmet",
@@ -84,8 +84,8 @@ namespace konu08SınıflarClasses
             };
 
             Console.WriteLine("Kullanıcı bilgileri :");
-            Console.WriteLine("Adı : "+kullanici.Adi);
-            Console.WriteLine("SoyAdı : "+kullanici.Soyadi);
+            Console.WriteLine("Adı : " + kullanici.Adi);
+            Console.WriteLine("SoyAdı : " + kullanici.Soyadi);
 
             Console.WriteLine();
 
@@ -137,8 +137,61 @@ namespace konu08SınıflarClasses
             Console.WriteLine($" Marka : {araba2.Marka} \n Model : {araba2.Model} \n Renk : {araba2.Renk}");
 
             Console.WriteLine();
+
+            Kategori kategori = new()
+            {
+                Id = 1,
+                KategoriAdi = "Elektronik"
+            };
+            Kategori kategori2 = new()
+            {
+                Id = 2,
+                KategoriAdi = "Bilgisayar"
+            };
+            Kategori kategori3 = new()
+            {
+                Id = 3,
+                KategoriAdi = "Telefon"
+            };
+            Console.WriteLine("Kategori   : " + kategori.KategoriAdi);
+            Console.WriteLine("Kategori 2 : " + kategori2.KategoriAdi);
+            Console.WriteLine("Kategori 3 : " + kategori3.KategoriAdi);
+
+            Console.WriteLine();
+
+            SiniftaMetotKullanimi metotKullanimi = new();
+            var sonuc = metotKullanimi.LoginKontrol("admin", "123456");
+            
+            if (sonuc == true)
+            {
+                Console.WriteLine("Giriş başarılı!");
+            }
+            else
+            {
+                Console.WriteLine("Kullanıcı adı veya şifre hatalı!");
+            }
+
+
+            var toplamasonucu = metotKullanimi.ToplamaYap(10,5);
+            Console.WriteLine("toplamasonucu : "+ toplamasonucu);
+
+            Console.WriteLine("Statik Degisken : " + SiniftaMetotKullanimi.StatikDegisken);
+
+            Console.WriteLine("Dinamik Degisken : " + metotKullanimi.DinamikDegisken);
+
+            Urun urun = new()
+            {
+                Id = 3,
+                Adi = "Laptop",
+                Fiyati = 14999,
+                Durum = true,
+                Markasi = "Dell",
+                UrunAciklamasi = "Dell Inspiron 15 3000 Serisi"
+            };
+
+
         }
-    }
+}
     class Kullanici
     {
         internal int Id;
