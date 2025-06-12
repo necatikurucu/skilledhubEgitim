@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Konu08SiniflarClasses;
+using System.ComponentModel.DataAnnotations;
 
 namespace konu08SınıflarClasses
 {
@@ -161,7 +162,7 @@ namespace konu08SınıflarClasses
 
             SiniftaMetotKullanimi metotKullanimi = new();
             var sonuc = metotKullanimi.LoginKontrol("admin", "123456");
-            
+
             if (sonuc == true)
             {
                 Console.WriteLine("Giriş başarılı!");
@@ -172,12 +173,14 @@ namespace konu08SınıflarClasses
             }
 
 
-            var toplamasonucu = metotKullanimi.ToplamaYap(10,5);
-            Console.WriteLine("toplamasonucu : "+ toplamasonucu);
+            var toplamasonucu = metotKullanimi.ToplamaYap(10, 5);
+            Console.WriteLine("toplamasonucu : " + toplamasonucu);
 
             Console.WriteLine("Statik Degisken : " + SiniftaMetotKullanimi.StatikDegisken);
 
             Console.WriteLine("Dinamik Degisken : " + metotKullanimi.DinamikDegisken);
+
+            Console.WriteLine();
 
             Urun urun = new()
             {
@@ -188,29 +191,78 @@ namespace konu08SınıflarClasses
                 Markasi = "Dell",
                 UrunAciklamasi = "Dell Inspiron 15 3000 Serisi"
             };
+            Urun mouse = new()
+            {
+                Id = 3,
+                Adi = "mouse",
+                Fiyati = 149,
+                Markasi = "A4 tech",
+                UrunAciklamasi = "kablolu"
+            };
+            Console.WriteLine("ürün bilgileri");
+            Console.WriteLine($"ürün adı {urun.Adi}");
+            Console.WriteLine($"ürün fiyatı {urun.Fiyati}");
+            Console.WriteLine($"ürün ürün açıklaması {urun.UrunAciklamasi}");
+            Console.WriteLine();
+            Console.WriteLine("ürün bilgileri");
+            Console.WriteLine($"ürün adı {mouse.Adi}");
+            Console.WriteLine($"ürün fiyatı {mouse.Fiyati}");
+            Console.WriteLine($"ürün ürün açıklaması {mouse.UrunAciklamasi}");
+            Console.WriteLine();
 
+            Console.WriteLine("Urun Data Metotlari");
+            UrunDataMetotlari urunDataMetotlari = new();
+            urunDataMetotlari.UrunEkle(mouse);
+            urunDataMetotlari.UrunGuncelle(mouse);
+            urunDataMetotlari.UrunSil(mouse);
 
+            Console.WriteLine();
+
+            Console.WriteLine("\t\türünler");
+            Console.WriteLine();
+            foreach (var item in urunDataMetotlari.Urunler())
+            {
+                Console.WriteLine($"\t ürün adı {item.Adi}");
+                Console.WriteLine($"\t ürün fiyatı {item.Fiyati}");
+                Console.WriteLine($"\t ürün açıklaması {item.UrunAciklamasi}");
+                Console.WriteLine($"\t ürün durumu {item.Durum}");
+                Console.WriteLine();
+            }
+            User user = new();
+            Console.WriteLine("Email Giriniz:");
+            user.Email = Console.ReadLine();
+            Console.WriteLine("Şifre Giriniz:");
+            user.Password = Console.ReadLine();
+            var giris = user.KullaniciGiris(user.Email, user.Password);
+            if (giris == true)
+            {
+                Console.WriteLine("Hoşgeldiniz!");
+            }
+            else
+                Console.WriteLine("Giriş Başarısız!");
+        }      
+    
+
+        class Kullanici
+        {
+            internal int Id;
+            internal string KullaniciAdi;
+            internal string Sifre;
+            internal string Email;
+            internal string Adi;
+            internal string Soyadi;
         }
-}
-    class Kullanici
-    {
-        internal int Id;
-        internal string KullaniciAdi;
-        internal string Sifre;
-        internal string Email;
-        internal string Adi;
-        internal string Soyadi;
-    }
-    class Araba
-    {
-        internal int Id;
-        internal string Marka;
-        internal string Model;
-        internal string KasaTipi;
-        internal string YakitTipi;
-        internal string VitesTipi;
-        internal string Renk;
-    } 
+        class Araba
+        {
+            internal int Id;
+            internal string Marka;
+            internal string Model;
+            internal string KasaTipi;
+            internal string YakitTipi;
+            internal string VitesTipi;
+            internal string Renk;
+        }
 
     }
+}
 
