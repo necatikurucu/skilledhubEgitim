@@ -12,6 +12,7 @@ namespace konu08SınıflarClasses
         public string UrunAciklamasi { get; set; } //prop kısayolu ile property oluşturulur
         public string Markasi { get; set; }
         public bool Durum   { get; set; }
+        public int KategoriId   { get; set; }
 
     }
 }
