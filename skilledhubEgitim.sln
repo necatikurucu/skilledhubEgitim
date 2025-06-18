@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konu09StructYapilar", "Konu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konu10StringSinifi", "Konu10StringSinifi\Konu10StringSinifi.csproj", "{B31B8588-8164-4699-B0CD-54D9EEED9E6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konu11Enumlar", "Konu11Enumlar\Konu11Enumlar.csproj", "{BBE7AF94-B61C-4371-A7ED-AB752A40DB79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konu12KalitimInheritance", "Konu12KalitimInheritance\Konu12KalitimInheritance.csproj", "{B40D2B16-DE85-4406-A27E-856676D0522B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{B31B8588-8164-4699-B0CD-54D9EEED9E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B31B8588-8164-4699-B0CD-54D9EEED9E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B31B8588-8164-4699-B0CD-54D9EEED9E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBE7AF94-B61C-4371-A7ED-AB752A40DB79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE7AF94-B61C-4371-A7ED-AB752A40DB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE7AF94-B61C-4371-A7ED-AB752A40DB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE7AF94-B61C-4371-A7ED-AB752A40DB79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B40D2B16-DE85-4406-A27E-856676D0522B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B40D2B16-DE85-4406-A27E-856676D0522B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B40D2B16-DE85-4406-A27E-856676D0522B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B40D2B16-DE85-4406-A27E-856676D0522B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
