@@ -1,6 +1,4 @@
-﻿using System.Xml.Linq;
-
-namespace Konu14InterfacesArayuzler
+﻿namespace Konu14InterfacesArayuzler
 {
     public class Urun : ISinifGereksinimleri , IVeritabaniIslemleri
     {

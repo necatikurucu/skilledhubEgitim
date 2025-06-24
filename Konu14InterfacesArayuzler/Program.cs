@@ -6,9 +6,9 @@
     }
     interface IDemo
     {
-        void Goster();    
+        void Goster();
     }
-    interface icerebilecekleri : IDemo 
+    interface icerebilecekleri : IDemo
     {
         public int sayi1 { get; set; }
         int sayi { get; set; }
@@ -24,7 +24,7 @@
         public void Goster()
         {
             Console.WriteLine(sayi1);
-                    }
+        }
 
         public void Topla()
         {
@@ -52,11 +52,28 @@
             if (!string.IsNullOrWhiteSpace(urunAdi)) // boşluk kontrolü yapıyoruz
             {
                 urun.Name = urunAdi;
-                urun.Add(urun.Name );
+                urun.Add(urun.Name);
             }
             else
             {
                 Console.WriteLine("Ürün adı boş bırakılamaz.");
+
+                Console.WriteLine();
+
+                Console.WriteLine("kategori adı  giriniz");
+                Kategori kategori = new Kategori();
+                KategoriDBIslemleri kategoriDBIslemleri = new();
+                var kategoriAdi = Console.ReadLine();
+                if (!string.IsNullOrWhiteSpace(kategoriAdi)) // boşluk kontrolü yapıyoruz
+                {
+                    kategori.Name = kategoriAdi;
+                    kategoriDBIslemleri.Add(kategoriAdi);
+
+                }
+                else
+                {
+                    Console.WriteLine("Kategori adı boş bırakılamaz.");
+                }
             }
         }
     }
