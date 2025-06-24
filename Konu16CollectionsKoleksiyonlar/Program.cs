@@ -13,6 +13,7 @@ namespace Konu16CollectionsKoleksiyonlar
           //  Ornek2();
           //  Ornek3();
               Ornek4();
+
         }
         static void Ornek1()
         {
