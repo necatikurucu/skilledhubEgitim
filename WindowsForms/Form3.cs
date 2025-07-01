@@ -26,7 +26,7 @@ namespace WindowsForms
         private void timer1_Tick(object sender, EventArgs e)
         {
             Random renk = new Random(); // Renk isminde sayı üreten bir nesne oluşturuldu
-            this.BackColor = Color.FromArgb(renk.Next(1, 100), renk.Next(1, 100), renk.Next(1, 100)); //burada this sınıfı geçerli form u temsil ediyor Formun arka plan rengini rastgele 1 ile 100 arası rgb renk kodlarını oluşturaca sayılar üretilecek şekilde ayarladık
+            this.BackColor = Color.FromArgb(renk.Next(1, 255), renk.Next(1, 255), renk.Next(1, 255)); //burada this sınıfı geçerli form u temsil ediyor Formun arka plan rengini rastgele 1 ile 100 arası rgb renk kodlarını oluşturaca sayılar üretilecek şekilde ayarladık
         }
 
     }
