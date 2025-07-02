@@ -16,7 +16,7 @@ namespace WindowsForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form5()); // windowsa form projesi caşıltırılırken hangi formun açılacağını buradan ayarlıyoruz
+            Application.Run(new Form7()); // windowsa form projesi caşıltırılırken hangi formun açılacağını buradan ayarlıyoruz
         }
     }
 }
