@@ -59,5 +59,6 @@ namespace WindowsForms
 
             MessageBox.Show(cbKategoriler.SelectedItem + " kategorisine " + txtUrunAdi.Text + " ürünü eklendi");
         }
+
     }
 }

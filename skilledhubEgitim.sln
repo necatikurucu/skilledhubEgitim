@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLIDPrensipleri", "SOLIDPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForms", "WindowsForms\WindowsForms.csproj", "{E360FA9F-90E4-476B-9ADD-1568AB69D8F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppAdoNet", "WindowsFormsAppAdoNet\WindowsFormsAppAdoNet.csproj", "{04EB3E74-63F3-4B5B-AADA-ECB8935C19A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppEntitiyFramework", "WindowsFormseNTİTYfRAMEwORK\WindowsFormsAppEntitiyFramework.csproj", "{0E2FC40D-1D2C-4945-92C6-51731C856BF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +133,14 @@ Global
 		{E360FA9F-90E4-476B-9ADD-1568AB69D8F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E360FA9F-90E4-476B-9ADD-1568AB69D8F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E360FA9F-90E4-476B-9ADD-1568AB69D8F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04EB3E74-63F3-4B5B-AADA-ECB8935C19A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04EB3E74-63F3-4B5B-AADA-ECB8935C19A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04EB3E74-63F3-4B5B-AADA-ECB8935C19A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04EB3E74-63F3-4B5B-AADA-ECB8935C19A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E2FC40D-1D2C-4945-92C6-51731C856BF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E2FC40D-1D2C-4945-92C6-51731C856BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E2FC40D-1D2C-4945-92C6-51731C856BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E2FC40D-1D2C-4945-92C6-51731C856BF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

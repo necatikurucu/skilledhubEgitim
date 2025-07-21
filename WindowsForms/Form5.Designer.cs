@@ -308,6 +308,7 @@
             this.dgvUrunler.Name = "dgvUrunler";
             this.dgvUrunler.Size = new System.Drawing.Size(200, 150);
             this.dgvUrunler.TabIndex = 5;
+          
             // 
             // panel1
             // 
